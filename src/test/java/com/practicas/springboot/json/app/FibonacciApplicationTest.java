@@ -12,7 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import com.practicas.springboot.json.app.service.impl.ServiceFibonacciImpl;
 
 @SpringBootTest
-class FobinacciApplicationTest {
+class FibonacciApplicationTest {
 	
 	@Autowired
 	ServiceFibonacciImpl serviceFibonacciImpl;
@@ -34,12 +34,12 @@ class FobinacciApplicationTest {
 	}
 	
 	@Test
-	void comprobarCantidadNumerosFibonacci() {
+	void getCantidadNumerosFibonacci() {
 		Assertions.assertEquals(21, serviceFibonacciImpl.listadoNumerosFibonacci().size());
 	}
 	
 	@Test
-	void getComprobarNumeroFibonacci() {
+	void getNumeroFibonacci() {
 		System.out.println("");
 		Scanner entradaDatoNumerico = new Scanner(System.in);
 		System.out.println("Ingrese un numero:");
